@@ -1,3 +1,6 @@
+;shellcode_framework_win32 
+;author xxxxnnxxxx 20160123
+
 [bits 32]
 global _GetFuncAddress
 global _str2dw
@@ -116,7 +119,7 @@ _exit:
     add esp,10h
     mov esp,ebp
     pop ebp
-	ret ;keep silent of esp (_stdcall)
+	ret ;keep silent of esp
 	
 	
 	
