@@ -10,7 +10,7 @@ global _str2dw
 
 ;__cdecl
 _str2dw:
-	;get a value by a string(the name of the function)
+    ;get a value by a string(the name of the function)
     push ebp
     mov ebp,esp
     push esi
