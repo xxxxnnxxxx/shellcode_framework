@@ -1,20 +1,19 @@
 # shellcode_framework
-x86 shellcode framework 
 
-shellcode framework²¢²»ÊÇÒ»¸öÍêÕûshellcode¿ò¼Ü£¬Ò²²»ÄÜ×Ô¶¯Éú³Éshellcode
-Ö»Ìá¹©x86ÏÂÄÚ´æº¯ÊıËÑË÷µÄ¹¦ÄÜ£¬ÕâµãÒª×¢Òâ£¬²»È»¿ÉÄÜÈÃÄãÊ§ÍûÁË¡£
-Èç¹ûÄãÓĞºÃµÄÓ¦ÓÃ»òÊÇÀ©Õ¹£¬¿ÉÄÜÁªÏµÎÒ£¬¼ÓÈëµ½Ê¾ÀıÖĞ
-x64°æ±¾»áÔÚÒÔºóÓĞÊ±¼äÉÏ´«¡£
+shellcode frameworkå¹¶ä¸æ˜¯ä¸€ä¸ªå®Œæ•´shellcodeæ¡†æ¶,ä¹Ÿä¸èƒ½è‡ªåŠ¨ç”Ÿæˆshellcodeåªæä¾›x86ä¸‹å†…å­˜å‡½æ•°æœç´¢çš„åŠŸèƒ½,è¿™ç‚¹è¦æ³¨æ„ï¼Œä¸ç„¶å¯èƒ½è®©ä½ å¤±æœ›äº†ã€‚<br/>
+å¦‚æœä½ æœ‰å¥½çš„åº”ç”¨æˆ–æ˜¯æ‰©å±•ï¼Œå¯èƒ½è”ç³»æˆ‘ï¼ŒåŠ å…¥åˆ°ç¤ºä¾‹ä¸­x64ç‰ˆæœ¬ä¼šåœ¨ä»¥åæœ‰æ—¶é—´ä¸Šä¼ ã€‚
 
-ÔÚ´ËÌá¹©Á½¸öÊ¾ÀıËµÃ÷Ó¦ÓÃ
-loadlibrarya.asm    Í¨¹ıËÑË÷LoadLibraryAº¯Êı£¬¼ÓÔØÖÆ¶¨µÄDll
-messageboxa.asm     »ñÈ¡MessageBoxA£¬µ¯³öÌáÊ¾¿ò
+##åœ¨æ­¤æä¾›ä¸¤ä¸ªç¤ºä¾‹è¯´æ˜åº”ç”¨
 
-±àÒë·½Ê½:
-ÏÂÔØnasm http://www.nasm.us/ 
-±àÒë·½Ê½ÊÇÉú³Ébin,nasm -f bin xxxx.asm -o xxxx.bin
+- loadlibrarya.asmé€šè¿‡æœç´¢LoadLibraryAå‡½æ•°ï¼ŒåŠ è½½åˆ¶å®šçš„Dll
+- messageboxa.asmè·å–MessageBoxAï¼Œå¼¹å‡ºæç¤ºæ¡†
 
-¿â°üº¬º¯ÊıËµÃ÷:
-GetFuncAddress(±ê×¼Cµ÷ÓÃ·½Ê½)   Í¨¹ıPEBµÃµ½º¯ÊıµØÖ·
-str2dw(±ê×¼Cµ÷ÓÃ·½Ê½)           °Ñº¯Êı×Ö·û´®×ª»¯ÎªÒ»¸öË«×ÖµÄÖµ(thanks massimiliano Tomassoli)	
+##ç¼–è¯‘æ–¹å¼:
+é€šè¿‡[nasm](http://www.nasm.us)è¿›è¡Œç¼–è¯‘ï¼Œç”Ÿæˆbinæ–‡ä»¶<br/>
+ä¾‹å¦‚ nasm -f bin xxxx.asm -o xxxx.bin
+
+
+##åº“åŒ…å«å‡½æ•°è¯´æ˜:
+- GetFuncAddress(æ ‡å‡†Cè°ƒç”¨æ–¹å¼)&nbsp;&nbsp;&nbsp;é€šè¿‡PEBå¾—åˆ°å‡½æ•°åœ°å€
+- str2dw(æ ‡å‡†Cè°ƒç”¨æ–¹å¼)&nbsp;&nbsp;&nbsp;&nbsp;æŠŠå‡½æ•°å­—ç¬¦ä¸²è½¬åŒ–ä¸ºä¸€ä¸ªåŒå­—çš„å€¼(thanks assimiliano Tomassoli)	
 
