@@ -47,10 +47,6 @@ _GetFuncAddress_x64:
     push    rsi
     push    rdi 
     push    rbp
-    push    r12
-    push    r13
-    push    r14
-    push    r15
     
     
     mov     rbp, rsp
@@ -137,10 +133,6 @@ _exit:
 
     mov     rsp, rbp
     
-    pop     r15
-    pop     r14
-    pop     r13
-    pop     r12
     pop     rbp
     pop     rdi
     pop     rsi
