@@ -3,7 +3,7 @@
 
 ##文件说明
 	search_api.asm		x86下内存搜索API
-	search_api_x64.as   x64下内存搜索API
+	search_api_x64.asm  x64下内存搜索API
 	loadlibrarya.asm	x86示例，通过搜索LoadLibraryA函数，加载shellcode末尾偏移500位置指定的dll路径
 	messageboxa.asm		示例，获取MessageBoxA，弹出提示框
 
