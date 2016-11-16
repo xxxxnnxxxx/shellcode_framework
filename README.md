@@ -1,17 +1,14 @@
 ##工程说明
-	暂时不是一个完整的框架，只提供了x86下的进程内存搜索函数的功能。
-	并且有局限性，如果进程不是通过显示加载dll的情况下，就不能搜索到相关库中的函数。
+	支持x86，x64下的内存搜索API函数
 
 ##文件说明
-	search_api.asp		内存搜素函数地址功能部分
-	loadlibrarya.asm	示例，通过搜索LoadLibraryA函数，加载制定的Dll
+	search_api.asm		x86下内存搜索API
+	search_api_x64.as   x64下内存搜索API
+	loadlibrarya.asm	x86示例，通过搜索LoadLibraryA函数，加载shellcode末尾偏移500位置指定的dll路径
 	messageboxa.asm		示例，获取MessageBoxA，弹出提示框
 
 ##编译方式:
 	通过[nasm](http://www.nasm.us)进行编译，生成bin文件<br/>
 	例如 nasm -f bin xxxx.asm -o xxxx.bin
 
-##函数说明
-	GetFuncAddress(标准C调用方式)		通过PEB得到函数地址
-	str2dw(标准C调用方式)				把函数字符串转化为一个双字的值(thanks assimiliano Tomassoli)	
 
