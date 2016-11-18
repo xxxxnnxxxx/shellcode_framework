@@ -131,6 +131,7 @@ s2:
     xor     rax, rax	
 _exit:
 
+	add 	rsp, 30h
     mov     rsp, rbp
     
     pop     rbp
