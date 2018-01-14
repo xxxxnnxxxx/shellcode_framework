@@ -8,7 +8,7 @@
 	loadlibrarya_x64.asmm       x64示例，通过搜索LoaLibraryA函数，加载shellcode末尾偏移500位置指定路径的dll
 	messageboxa.asm             示例，获取MessageBoxA，弹出提示框
 
-## 编译方式:
+## 编译方式
 	通过[nasm](http://www.nasm.us)进行编译，生成bin文件<br/>
 	例如 nasm -f bin xxxx.asm -o xxxx.bin
 
